@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+      
+    <title>HOME</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Wicky Winner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/about">About</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/projects">Projects</a>  
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contactme</a>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container my-0">
+        <h2 class="text-center my-3 py-3">My Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{%static 'img/pic11.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Quiz App</h5>
+              <p class="card-text">This is a simple python GUI-Tkinter application built with all major concepts of Python</p>
+              <a href="https://github.com/wickywinner/kwizz/blob/master/quizGAME.py" target="_blank" class="btn btn-primary">Click to see</a>
+            </div>
+          </div>
+        </div>
+  
+          <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{%static 'img/pic5.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">IrctcApp</h5>
+              <p class="card-text">This is a simple Pyhon GUI-Tkinter application which fetches data from backend API to give the route details of the enter train no.</p>
+              <a href="https://github.com/wickywinner/wicky-winner/blob/master/irctcapp.py" target="_blank" class="btn btn-primary">Click to see</a>
+            </div>
+          </div>
+        </div>
+  
+          <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{%static 'img/pic16.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Travello</h5>
+              <p class="card-text">This is a simple Django website where you select place of destination for your weekends. </p>
+              <a href="https://github.com/wickywinner/Travello" target="_blank" class="btn btn-primary">Click to see</a>
+            </div>
+          </div>
+        </div> 
+        <style>
+          .footer {
+            position: static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+          }
+          </style>
+    
+        <div class="footer">
+          <p>
+          Copyright &copy; 2021 - All rights reserved 
+        </p>
+      </p>
+
+
+      <div class="centerdiv">
+      <a href="https://www.facebook.com/profile.php?id=100004710433797" target="_blank">
+      
+          <i class="fa fa-2x fa-facebook"></i>
+  
+      </a>
+      <a href="https://instagram.com/wicky_winner?igshid=1y0nrluod6705" target="_blank">
+      
+          <i class="fa fa-2x fa-instagram"></i>
+  
+      </a>
+      <a href="https://www.linkedin.com/in/wicky-winner-32139a179" target="_blank">
+      
+          <i class="fa fa-2x fa-linkedin"></i>
+  
+      </a>
+      <a href="https://github.com/wickywinner" target="_blank">
+      
+          <i class="fa fa-2x fa-github"></i>
+  
+      </a>
+    </div>
+    <style>
+      *{ margin: 0; Padding:0; }
+  
+      .centerdiv{
+          height: 10vh;
+          display: flex;
+          justify-content:  center;
+          align-items: centre;
+          
+      }
+      a i{
+          height: 40px;
+          width: 40px;
+          background-color:#f5f6fa;
+          border-radius: 50px;
+          text-align: center;
+          margin: 10px;
+          line-height: 50px;
+          box-shadow: 1px 4px 2px 2px #dcdde1;
+      }
+      a i {
+          transition: all 0.3s linear;
+      }
+  
+      a:hover i{
+          transform: scale(1.4);
+      }
+      .fa-instagram{
+          color:#e84393;
+      }
+      .fa-facebook{
+          color:#3b5998;
+      }
+      .fa-linkedin{
+          color:#0097e6;
+      }
+      .fa-github{
+          color:#211F1F;
+      }
+    </style>
+  
+        </footer>
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+  </body>
+</html>
